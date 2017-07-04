@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00796b">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00000000"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Adaugare membru" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TableRow>
+            <TextView
+                android:text="Nume"
+                android:textSize="20dp"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPersonName"
+                  />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Prenume"
+                android:textSize="20dp"
+                android:padding="3dip" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPersonName"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Email"
+                android:textSize="20dp"
+                android:padding="3dip" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPersonName"
+                />
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Nota"
+                android:textSize="20dp"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:inputType="number" />
+
+        </TableRow>
+        <Button
+            android:layout_marginTop="40dp"
+            android:text="Salvare"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="salvareButton"
+            android:background="#37474f"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            />
+
+    </TableLayout>
+</LinearLayout>
