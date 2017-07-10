@@ -1,108 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light"
-    android:theme="@style/AppTheme"
     android:orientation="vertical"
-    tools:context="com.example.cristinel.catalog.MainActivity"
-    android:weightSum="1">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2" />
+    android:background="@drawable/group"
+    tools:context="com.example.cristinel.catalog.loginregister.Introducere">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:text="Catalog"
-        android:textSize="50sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/round"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimary"
-        android:paddingLeft="20dp"
-        android:hint="Username"
-        android:textColorHint="@color/colorPrimary"
-        android:layout_weight="0.04"
+        android:text="Ce esti tu ? "
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
         />
 
-    <EditText
-        android:id="@+id/editText4"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="@color/colorPrimary"
-        android:inputType="textPersonName"
         android:background="@drawable/round"
-        android:hint="Password"
-        android:textColorHint="@color/colorPrimary"
-        android:layout_weight="0.04" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="20dp"
-        android:background="#0c6439"
-        android:onClick="loginButtonClicked"
-        android:text="Log In"
-        android:textAllCaps="true"
-        android:textSize="25dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="or"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log In With Facebook"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/studentButton"
+        android:text="Student"
         android:textAllCaps="false"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="50dp"
-        android:id="@+id/butonFacebook"
-        android:layout_marginRight="50dp"
-        android:background="#3b5998"/>
+        android:textSize="25dp"
+        android:onClick="StudentButton"
+        android:textColor="#004d40"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:textAllCaps="false"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Profesor"
+        android:textSize="25dp"
+        android:id="@+id/profesorButtonId"
+        android:onClick="profesorButton"
+        android:textColor="#004d40"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.3" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign in"
+            android:id="@+id/SignIn"
+            android:textSize="20dp"
+            android:background="#00000000"
 
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:id="@+id/signUpButton"
+            android:layout_weight="1"
+            android:text="Sign up"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/buton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Don't have an account yet? Sign Up"
-        android:textAllCaps="false"
-        android:background="#00000000"
-
-        android:textSize="20dp" />
 </LinearLayout>

@@ -18,12 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterClass"/>
-        <activity android:name=".TableLayoutDoi"/>
-        <activity android:name=".Adaugare"/>
-        <activity android:name=".Editare"/>
-        <activity android:name=".CautareStergere"/>
-        <activity android:name=".Acasa"/>
+        <activity android:name=".loginregister.RegisterClass" />
+        <activity android:name=".Profesor.TableLayoutDoi" />
+        <activity android:name=".Profesor.Adaugare" />
+        <activity android:name=".Student.Editare" />
+        <activity android:name=".CautareStergere" />
+        <activity android:name=".Acasa" />
+        <activity android:name=".loginregister.Introducere"/>
+        <activity android:name=".database.ListDataActivity"/>
+        <activity android:name=".database.EditDataActivity"/>
     </application>
 
 </manifest>

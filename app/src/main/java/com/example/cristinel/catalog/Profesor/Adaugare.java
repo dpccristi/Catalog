@@ -1,10 +1,11 @@
-package com.example.cristinel.catalog;
+package com.example.cristinel.catalog.Profesor;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.cristinel.catalog.R;
 
 
 public class Adaugare extends AppCompatActivity {
