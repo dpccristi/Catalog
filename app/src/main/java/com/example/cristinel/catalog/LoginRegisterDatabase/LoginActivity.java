@@ -44,8 +44,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initListeners();
         initObjects();
     }
-
-
     private void initViews() {
 
         nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
