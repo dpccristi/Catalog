@@ -1,19 +1,5 @@
-package com.example.cristinel.catalog.loginregister;
+package com.example.cristinel.catalog.LoginRegisterDatabase;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-
-import com.example.cristinel.catalog.LoginRegisterDatabase.DatabaseHelper;
-import com.example.cristinel.catalog.LoginRegisterDatabase.InputValidation;
-import com.example.cristinel.catalog.LoginRegisterDatabase.RegisterActivity;
-import com.example.cristinel.catalog.LoginRegisterDatabase.UsersListActivity;
-import com.example.cristinel.catalog.Profesor.TableLayoutDoi;
-import com.example.cristinel.catalog.R;
-import com.example.cristinel.catalog.Student.Editare;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -23,12 +9,15 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
-import android.util.Log;
 import android.view.View;
 
+import com.example.cristinel.catalog.R;
 
-public class Introducere extends AppCompatActivity implements View.OnClickListener {
-    private final AppCompatActivity activity = Introducere.this;
+/**
+ * Created by Cristinel on 7/11/2017.
+ */
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    private final AppCompatActivity activity = LoginActivity.this;
 
     private NestedScrollView nestedScrollView;
 
@@ -49,16 +38,14 @@ public class Introducere extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getSupportActionBar().hide();
 
-        initViews();
+
+       initViews();
         initListeners();
         initObjects();
     }
 
-    /**
-     * This method is to initialize views
-     */
+
     private void initViews() {
 
         nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
@@ -75,31 +62,23 @@ public class Introducere extends AppCompatActivity implements View.OnClickListen
 
     }
 
-    /**
-     * This method is to initialize listeners
-     */
+
     private void initListeners() {
         appCompatButtonLogin.setOnClickListener(this);
         textViewLinkRegister.setOnClickListener(this);
     }
 
-    /**
-     * This method is to initialize objects to be used
-     */
+
     private void initObjects() {
         databaseHelper = new DatabaseHelper(activity);
         inputValidation = new InputValidation(activity);
 
     }
 
-    /**
-     * This implemented method is to listen the click on view
-     *
-     * @param v
-     */
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+       switch (v.getId()) {
             case R.id.appCompatButtonLogin:
                 verifyFromSQLite();
                 break;
@@ -111,9 +90,7 @@ public class Introducere extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    /**
-     * This method is to validate the input text fields and verify login credentials from SQLite
-     */
+
     private void verifyFromSQLite() {
         if (!inputValidation.isInputEditTextFilled(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
             return;
@@ -141,11 +118,10 @@ public class Introducere extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    /**
-     * This method is to empty all input edit text
-     */
+
     private void emptyInputEditText() {
         textInputEditTextEmail.setText(null);
         textInputEditTextPassword.setText(null);
     }
+
 }

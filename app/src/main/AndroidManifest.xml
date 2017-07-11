@@ -27,6 +27,10 @@
         <activity android:name=".loginregister.Introducere"/>
         <activity android:name=".database.ListDataActivity"/>
         <activity android:name=".database.EditDataActivity"/>
+        <activity android:name=".Student.NotaStudent"/>
+        <activity android:name=".LoginRegisterDatabase.RegisterActivity"/>
+        <activity android:name=".LoginRegisterDatabase.UsersListActivity"/>
+        <activity android:name=".LoginRegisterDatabase.LoginActivity"/>
     </application>
 
 </manifest>

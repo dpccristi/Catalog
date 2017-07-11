@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.cristinel.catalog.LoginRegisterDatabase.LoginActivity;
 import com.example.cristinel.catalog.loginregister.Introducere;
 import com.example.cristinel.catalog.loginregister.RegisterClass;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Introducere.class);
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         });

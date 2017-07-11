@@ -1,8 +1,26 @@
 package com.example.cristinel.catalog.Student;
 
-/**
- * Created by Cristinel on 7/10/2017.
- */
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class NotaStudent {
+import com.example.cristinel.catalog.R;
+import com.example.cristinel.catalog.loginregister.Introducere;
+
+
+
+public class NotaStudent extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.nota_student);
+        TextView textView = (TextView) findViewById(R.id.textViewNota);
+        textView.setText("das");
+
+    }
+
+
 }
