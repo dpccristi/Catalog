@@ -1,8 +1,6 @@
 package com.example.cristinel.catalog.LoginRegisterDatabase;
 
-/**
- * Created by Cristinel on 7/11/2017.
- */
+
 
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
